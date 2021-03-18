@@ -12,7 +12,7 @@ class CreateSpecificationService {
         const specificationAlreadyExistis = this.specificationsRepository.findByName(name);
 
         if(specificationAlreadyExistis) {
-            throw new Error("Specification already existis!");
+            throw new Error("Specification already existis!!");
         }
 
         this.specificationsRepository.create({
